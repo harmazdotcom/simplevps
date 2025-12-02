@@ -3,228 +3,218 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SimpleVPS – Mobile Friendly VPS</title>
-
+<title>🚀 SimpleVPS – Mobile Friendly</title>
 <style>
     body {
         margin:0;
-        background:#f4f4f7;
-        font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background:#f2f2f7;
         color:#1c1c1e;
+        line-height:1.5;
     }
-
-    /* PREMIUM HEADER */
     header {
-        background: linear-gradient(90deg, #007aff, #005fcc);
-        padding:18px 0 16px;
-        text-align:center;
+        background:#007aff;
         color:#fff;
-        font-size:24px;
-        font-weight:700;
-        letter-spacing:0.4px;
-        text-shadow:0 1px 3px rgba(0,0,0,0.25);
-    }
-
-    .full-site-link {
+        padding:15px 10px;
         text-align:center;
-        background:#e9f2ff;
-        padding:12px 0;
-        font-size:16px;
-        font-weight:500;
-    }
-
-    .full-site-link a {
-        color:#007aff;
-        text-decoration:none;
-    }
-
-    /* Container */
-    .container {
-        padding:20px;
-        max-width:650px;
-        margin:auto;
-    }
-
-    /* VPS PLAN CARD */
-    .plan {
-        background:#fff;
-        border-radius:16px;
-        padding:22px;
-        margin-bottom:20px;
-        box-shadow:0 5px 15px rgba(0,0,0,0.08);
-        transition:transform 0.15s ease, box-shadow 0.15s ease;
-    }
-
-    .plan:hover {
-        transform:translateY(-3px);
-        box-shadow:0 8px 20px rgba(0,0,0,0.12);
-    }
-
-    .plan h3 {
-        margin:0;
-        font-size:21px;
-        color:#007aff;
-        margin-bottom:10px;
-        font-weight:700;
-        display:flex;
-        align-items:center;
-        gap:6px;
-    }
-
-    .plan h3::before {
-        content:"💻";
         font-size:20px;
+        font-weight:600;
+        position:sticky;
+        top:0;
+        z-index:100;
     }
-
-    .specs {
-        font-size:16px;
-        line-height:1.7;
-        margin-bottom:15px;
-        color:#333;
+    section {
+        padding:20px 15px;
+        max-width:500px;
+        margin:0 auto;
+        text-align:center;
     }
-
-    .price {
+    h2 {
         font-size:22px;
-        font-weight:700;
-        margin:10px 0;
-        color:#000;
+        margin-bottom:15px;
+        font-weight:600;
+        color:#007aff;
     }
-
+    .plan-box {
+        background:#fff;
+        padding:20px;
+        border-radius:12px;
+        box-shadow:0 3px 10px rgba(0,0,0,0.1);
+        margin-bottom:20px;
+        text-align:left;
+    }
+    .plan-box h3 {
+        font-size:18px;
+        margin-bottom:10px;
+        color:#007aff;
+    }
+    .plan-box ul {
+        list-style:none;
+        padding:0;
+        margin:0 0 10px 0;
+    }
+    .plan-box ul li {
+        margin-bottom:8px;
+        font-size:14px;
+    }
     .btn {
         display:block;
         width:100%;
-        padding:14px;
-        border:none;
         background:#007aff;
-        color:white;
-        font-size:17px;
-        border-radius:12px;
+        color:#fff;
+        font-weight:500;
+        font-size:16px;
+        padding:10px 0;
+        border-radius:10px;
+        border:none;
         cursor:pointer;
         text-align:center;
-        font-weight:600;
-        transition:0.15s ease;
+        text-decoration:none;
+        margin-top:10px;
+        box-shadow:0 3px 6px rgba(0,122,255,0.2);
+        transition:all 0.2s ease-in-out;
     }
-
     .btn:hover {
-        background:#005fcc;
+        background:#0051a8;
         transform:translateY(-2px);
-        box-shadow:0 3px 8px rgba(0,0,0,0.15);
+        box-shadow:0 5px 10px rgba(0,122,255,0.3);
     }
-
-    footer {
-        padding:25px 20px;
+    .footer {
         text-align:center;
+        padding:15px 10px;
+        background:#fff;
         font-size:14px;
-        color:#888;
-        margin-top:25px;
+        color:#1c1c1e;
     }
-
-    /* DESKTOP VIEW IMPROVED */
-    @media(min-width:600px){
-        .container {
-            max-width:900px;
-        }
-
-        .plan {
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            padding:25px;
-        }
-
-        .specs {
-            font-size:17px;
-        }
-
-        .price {
-            font-size:24px;
-        }
-
-        .btn {
-            width:auto;
-            padding:12px 28px;
-            font-size:16px;
-        }
+    .social-links a {
+        margin:0 8px;
+        text-decoration:none;
+        font-size:18px;
+    }
+    .payment-icons img {
+        height:32px;
+        margin:0 8px;
+    }
+    .terms-box {
+        background:#fff;
+        padding:15px;
+        border-radius:12px;
+        box-shadow:0 3px 10px rgba(0,0,0,0.1);
+        text-align:left;
+        font-size:14px;
+        line-height:1.4;
+        margin-bottom:20px;
+    }
+    .terms-box ul {
+        padding-left:18px;
+        margin:0;
     }
 </style>
 </head>
-
 <body>
 
 <header>🚀 SimpleVPS – Mobile Friendly</header>
 
-<div class="full-site-link">
-    <a href="indexFULL.html">🔗 View Full Website</a>
+<section>
+    <h2>🔥 Our Best VPS Plans</h2>
+    <p style="background:#fff3cd; color:#856404; padding:10px 15px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); font-size:14px; margin-bottom:15px;">
+        💥 Special Promo: Subscribe for 12 months and pay for only 10 months! Save more and enjoy uninterrupted VPS service.
+    </p>
+
+    <div class="plan-box">
+        <h3>VPS 1GB – 1 vCPU</h3>
+        <ul>
+            <li>1GB RAM</li>
+            <li>1 vCPU</li>
+            <li>Shared IP</li>
+            <li>100Mbps (Burstable 1Gbps)</li>
+            <li>Windows & Linux OS</li>
+            <li>Automation reset/reinstall</li>
+        </ul>
+        <a href="https://cp.simplevps.xyz/index.php/store/windows-rdp" class="btn">Order Now – RM15/mo</a>
+    </div>
+
+    <div class="plan-box">
+        <h3>VPS 2GB – 1 vCPU</h3>
+        <ul>
+            <li>2GB RAM</li>
+            <li>1 vCPU</li>
+            <li>Shared IP</li>
+            <li>100Mbps (Burstable 1Gbps)</li>
+            <li>Windows & Linux OS</li>
+            <li>Automation reset/reinstall</li>
+        </ul>
+        <a href="https://cp.simplevps.xyz/index.php/store/windows-rdp" class="btn">Order Now – RM20/mo</a>
+    </div>
+
+    <div class="plan-box">
+        <h3>VPS 2GB – 2 vCPU</h3>
+        <ul>
+            <li>2GB RAM</li>
+            <li>2 vCPU</li>
+            <li>Shared IP</li>
+            <li>100Mbps (Burstable 1Gbps)</li>
+            <li>Windows & Linux OS</li>
+            <li>Automation reset/reinstall</li>
+        </ul>
+        <a href="https://cp.simplevps.xyz/index.php/store/windows-rdp" class="btn">Order Now – RM35/mo</a>
+    </div>
+
+    <!-- Terms & Conditions -->
+    <div class="terms-box">
+        <h3>📜 Terms & Conditions</h3>
+        <ul>
+            <li>Customers can run any legal software or service on the VPS.</li>
+            <li>Illegal activities, hacking, spamming, and cryptocurrency mining are strictly prohibited.</li>
+            <li>Sharing your VPS access with others is not allowed.</li>
+            <li>We reserve the right to suspend or terminate VPS accounts violating these terms.</li>
+            <li>By using this VPS, you agree to comply with local laws and regulations.</li>
+        </ul>
+    </div>
+
+    <a href="index.html" class="btn" style="background:#34c759; margin-top:10px;">🌐 View Full Website</a>
+</section>
+
+<section style="padding:20px 15px; text-align:center; max-width:500px; margin:0 auto;">
+    <h2 style="font-size:22px; color:#007aff; margin-bottom:15px;">💬 Contact & Info</h2>
+    <div style="background:#fff; padding:15px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.1); font-size:14px; line-height:1.6;">
+        <p style="margin:10px 0;">
+            📱 WhatsApp: 
+            <a href="https://wa.me/601135827728" target="_blank" style="color:#007aff; font-weight:500; text-decoration:none;">
+                +6011-35827728
+            </a>
+        </p>
+        <p style="margin:10px 0;">
+            ✉️ Email: 
+            <a href="mailto:support@simplevps.xyz" style="color:#007aff; font-weight:500; text-decoration:none;">
+                support@simplevps.xyz
+            </a>
+        </p>
+    </div>
+</section>
+
+
+<section>
+    <h2>🔗 Follow & Billing</h2>
+    <div style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap; margin-bottom:20px;">
+        <a href="https://shopee.com" target="_blank" style="background:#ff5722; color:#fff; padding:10px 15px; border-radius:8px; text-decoration:none; font-weight:500;">🛒 Shopee</a>
+        <a href="https://instagram.com" target="_blank" style="background:#C13584; color:#fff; padding:10px 15px; border-radius:8px; text-decoration:none; font-weight:500;">📷 Instagram</a>
+        <a href="https://cp.simplevps.xyz" target="_blank" style="background:#34c759; color:#fff; padding:10px 15px; border-radius:8px; text-decoration:none; font-weight:500;">💼 Billing</a>
+    </div>
+
+    <h2>💳 Payment Methods</h2>
+    <div style="display:flex; justify-content:center; align-items:center; gap:15px; flex-wrap:wrap;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/FPX_Logo.svg" alt="FPX" style="height:40px; border-radius:6px; background:#fff; padding:5px; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" style="height:40px; border-radius:6px; background:#fff; padding:5px; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" style="height:40px; border-radius:6px; background:#fff; padding:5px; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Stripe_logo%2C_revised_2016.png" alt="Debit/Credit" style="height:40px; border-radius:6px; background:#fff; padding:5px; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+    </div>
+</section>
+
+
+<div class="footer">
+    © 2025 SimpleVPS.xyz. Operated by <strong>Harmaz Systems</strong> – SSM No: <strong>202103303373</strong>
 </div>
-
-<div class="container">
-
-    <!-- VPS 1GB -->
-    <div class="plan">
-        <div>
-            <h3>VPS 1GB – 1 vCPU</h3>
-            <div class="specs">
-                1GB RAM • 1 vCPU<br>
-                100Mbps Network<br>
-                Shared IP<br>
-                Windows & Linux OS
-            </div>
-            <div class="price">RM15 / mo</div>
-        </div>
-        <button class="btn" onclick="location.href='https://cp.simplevps.xyz/index.php/store/windows-rdp';">
-            Order Now
-        </button>
-    </div>
-
-    <!-- VPS 2GB -->
-    <div class="plan">
-        <div>
-            <h3>VPS 2GB – 1 vCPU</h3>
-            <div class="specs">
-                2GB RAM • 1 vCPU<br>
-                100Mbps Network<br>
-                Shared IP<br>
-                Windows & Linux OS
-            </div>
-            <div class="price">RM20 / mo</div>
-        </div>
-        <button class="btn" onclick="location.href='https://cp.simplevps.xyz/index.php/store/windows-rdp';">
-            Order Now
-        </button>
-    </div>
-
-    <!-- VPS 2GB 2CPU -->
-    <div class="plan">
-        <div>
-            <h3>VPS 2GB – 2 vCPU</h3>
-            <div class="specs">
-                2GB RAM • 2 vCPU<br>
-                100Mbps Network<br>
-                Shared IP<br>
-                Windows & Linux OS
-            </div>
-            <div class="price">RM35 / mo</div>
-        </div>
-        <button class="btn" onclick="location.href='https://cp.simplevps.xyz/index.php/store/windows-rdp';">
-            Order Now
-        </button>
-    </div>
-
-</div>
-
-<footer>
-    © 2025 SimpleVPS – Mobile VPS Page<br>
-    WhatsApp: +6011-35827728<br>
-    <strong>Harmaz Systems</strong> — SSM No: <strong>202103303373</strong>
-
-    <div style="margin-top:15px;">
-        <a href="https://shopee.com" style="margin:0 8px;">🛒 Shopee</a>
-        <a href="https://instagram.com" style="margin:0 8px;">📷 Instagram</a>
-        <a href="https://cp.simplevps.xyz" style="margin:0 8px;">💼 Billing</a>
-    </div>
-</footer>
-
-
 
 </body>
 </html>
