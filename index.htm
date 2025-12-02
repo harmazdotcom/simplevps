@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SimpleVPS - Malaysia VPS Hosting</title>
+<style>
+    body {
+        margin:0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background:#f2f2f7;
+        color:#1c1c1e;
+        line-height:1.5;
+    }
+
+    header {
+        background:#fff;
+        padding:15px 0;
+        text-align:center;
+        box-shadow:0 1px 2px rgba(0,0,0,0.1);
+        position:sticky;
+        top:0;
+        z-index:100;
+    }
+
+    header h1 {
+        margin:0;
+        font-size:26px;
+        font-weight:600;
+    }
+
+    nav {
+        margin-top:8px;
+    }
+
+    nav a {
+        margin:0 10px;
+        text-decoration:none;
+        color:#007aff;
+        font-weight:500;
+        font-size:15px;
+        transition:color 0.2s;
+    }
+
+    nav a:hover {
+        color:#0051a8;
+    }
+
+    section {
+        padding:50px 20px;
+        max-width:1000px;
+        margin:0 auto;
+        text-align:center;
+    }
+
+    section h2 {
+        font-size:28px;
+        margin-bottom:15px;
+        font-weight:600;
+    }
+
+    section p {
+        font-size:16px;
+        margin-bottom:20px;
+        color:#3c3c4399;
+    }
+
+    .plans-container {
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:20px;
+        margin-top:30px;
+    }
+
+    .plan-box {
+        background:#fff;
+        padding:25px 20px;
+        border-radius:12px;
+        box-shadow:0 3px 10px rgba(0,0,0,0.1);
+        width:260px;
+        text-align:left;
+    }
+
+    .plan-box h3 {
+        font-size:20px;
+        margin-bottom:15px;
+        color:#007aff;
+    }
+
+    .plan-box ul {
+        list-style:none;
+        padding:0;
+        margin:0 0 20px 0;
+    }
+
+    .plan-box ul li {
+        margin-bottom:10px;
+        display:flex;
+        align-items:center;
+        font-size:14px;
+    }
+
+    .plan-box ul li img {
+        margin-right:8px;
+    }
+
+    .btn {
+        display:inline-block;
+        background:#007aff;
+        color:#fff;
+        font-weight:500;
+        font-size:16px;
+        padding:12px 28px;
+        border-radius:10px;
+        border:none;
+        cursor:pointer;
+        box-shadow:0 3px 6px rgba(0,122,255,0.2);
+        transition:all 0.2s ease-in-out;
+        text-align:center;
+    }
+
+    .btn:hover {
+        background:#0051a8;
+        transform:translateY(-2px);
+        box-shadow:0 5px 10px rgba(0,122,255,0.3);
+    }
+
+    footer {
+        background:#fff;
+        color:#8e8e93;
+        text-align:center;
+        padding:25px 20px;
+        font-size:14px;
+        box-shadow:0 -1px 2px rgba(0,0,0,0.1);
+    }
+
+    footer a {
+        color:#007aff;
+        text-decoration:none;
+        margin:0 5px;
+    }
+
+    footer p.contact {
+        margin:5px 0;
+        color:#1c1c1e;
+    }
+
+    .payment-icons img {
+        height:32px;
+        margin:0 8px;
+    }
+
+    @media(max-width:900px){
+        .plans-container {
+            flex-direction:column;
+            align-items:center;
+        }
+    }
+
+    @media(max-width:600px){
+        section {
+            padding:35px 15px;
+        }
+
+        header h1 {
+            font-size:22px;
+        }
+
+        nav a {
+            font-size:13px;
+            margin:0 6px;
+        }
+
+        section h2 {
+            font-size:24px;
+        }
+
+        section p {
+            font-size:15px;
+        }
+
+        .plan-box {
+            width:90%;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🚀 SimpleVPS Malaysia</h1>
+    <nav>
+        <a href="https://cp.simplevps.xyz">Home</a>
+        <a href="https://cp.simplevps.xyz/clientarea.php">Clients</a>
+        <a href="https://cp.simplevps.xyz/cart.php">Products & Services</a>
+        <a href="https://cp.simplevps.xyz/about.php">About Us</a>
+        <a href="https://cp.simplevps.xyz/contact.php">Contact Us</a>
+    </nav>
+</header>
+
+<!-- VPS Plans -->
+<section>
+    <h2>🔥 Our Best VPS Plans</h2>
+    <div class="plans-container">
+        <div class="plan-box">
+            <h3>VPS 1GB – 1 vCPU</h3>
+            <ul>
+                <li>1GB RAM</li>
+                <li>1 vCPU</li>
+                <li>Shared IP address</li>
+                <li>100Mbps (Burstable 1Gbps)</li>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux" style="height:20px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2012.svg" alt="Windows" style="height:20px;">
+                    Windows & Linux OS
+                </li>
+                <li>Automation reset/reinstall</li>
+            </ul>
+            <button class="btn" onclick="window.location.href='https://cp.simplevps.xyz/index.php/store/windows-rdp';">Order Now – RM15/mo</button>
+        </div>
+
+        <div class="plan-box">
+            <h3>VPS 2GB – 1 vCPU</h3>
+            <ul>
+                <li>2GB RAM</li>
+                <li>1 vCPU</li>
+                <li>Shared IP address</li>
+                <li>100Mbps (Burstable 1Gbps)</li>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux" style="height:20px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2012.svg" alt="Windows" style="height:20px;">
+                    Windows & Linux OS
+                </li>
+                <li>Automation reset/reinstall</li>
+            </ul>
+            <button class="btn" onclick="window.location.href='https://cp.simplevps.xyz/index.php/store/windows-rdp';">Order Now – RM20/mo</button>
+        </div>
+
+        <div class="plan-box">
+            <h3>VPS 2GB – 2 vCPU</h3>
+            <ul>
+                <li>2GB RAM</li>
+                <li>2 vCPU</li>
+                <li>Shared IP address</li>
+                <li>100Mbps (Burstable 1Gbps)</li>
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux" style="height:20px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2012.svg" alt="Windows" style="height:20px;">
+                    Windows & Linux OS
+                </li>
+                <li>Automation reset/reinstall</li>
+            </ul>
+            <button class="btn" onclick="window.location.href='https://cp.simplevps.xyz/index.php/store/windows-rdp';">Order Now – RM35/mo</button>
+        </div>
+    </div>
+</section>
+
+<!-- Free Shared Web Hosting -->
+<section>
+    <h2>🌐 Free Shared Web Hosting</h2>
+    <p>Perfect for small websites, blogs, or testing. Only available on our subdomain <strong>*.simplehost.xyz</strong>. Upgrade anytime for more resources.</p>
+
+    <div class="plans-container">
+        <div class="plan-box">
+            <h3>Free Plan</h3>
+            <ul>
+                <li>1GB Disk Space</li>
+                <li>10GB Monthly Bandwidth</li>
+                <li>Subdomain: <strong>*.simplehost.xyz</strong></li>
+                <li>PHP & MySQL Support</li>
+                <li>Control Panel: Virtualmin</li>
+            </ul>
+            <button class="btn" onclick="window.location.href='https://cp.simplevps.xyz/cart.php';">Sign Up Free</button>
+        </div>
+
+        <div class="plan-box">
+            <h3>Basic Plan</h3>
+            <ul>
+                <li>3GB Disk Space</li>
+                <li>30GB Monthly Bandwidth</li>
+                <li>Subdomain + Custom Domain</li>
+                <li>PHP & MySQL Support</li>
+                <li>Control Panel: Virtualmin</li>
+            </ul>
+            <button class="btn" onclick="window.location.href='https://cp.simplevps.xyz/cart.php';">RM5 / Month</button>
+        </div>
+
+        <div class="plan-box">
+            <h3>Advanced Plan</h3>
+            <ul>
+                <li>5GB Disk Space</li>
+                <li>50GB Monthly Bandwidth</li>
+                <li>Custom Domain</li>
+                <li>PHP & MySQL Support</li>
+                <li>Control Panel: Virtualmin</li>
+            </ul>
+            <button class="btn" onclick="window.location.href='https://cp.simplevps.xyz/cart.php';">RM10 / Month</button>
+        </div>
+    </div>
+</section>
+
+<!-- Docker / Container Services -->
+<section>
+    <h2>🐳 Container & Docker Services</h2>
+    <p>Run your custom containers or automation apps with ease. Perfect for developers, bots, or gaming servers.</p>
+
+    <div class="plans-container">
+        <div class="plan-box">
+            <h3>Docker VPS</h3>
+            <ul>
+                <li>1 vCPU, 2GB RAM</li>
+                <li>Shared IP / Optional Dedicated IP</li>
+                <li>Deploy multiple containers</li>
+                <li>100Mbps (Burstable 1Gbps)</li>
+                <li>Windows & Linux OS supported</li>
+            </ul>
+            <button class="btn" onclick="window.location.href='https://cp.simplevps.xyz/cart.php';">Get Started</button>
+        </div>
+
+        <div class="plan-box">
+            <h3>Kuma Uptime</h3>
+            <ul>
+                <li>1 vCPU, 1GB RAM</li>
+                <li>Monitor uptime & receive alerts</li>
+                <li>Deploy multiple monitoring containers</li>
+                <li>Optional dedicated IP</li>
+            </ul>
+            <button class="btn" onclick="window.location.href='https://cp.simplevps.xyz/cart.php';">Get Started</button>
+        </div>
+
+        <div class="plan-box">
+            <h3>Minecraft Server</h3>
+            <ul>
+                <li>2 vCPU, 2GB RAM</li>
+                <li>Preinstalled game server</li>
+                <li>Shared IP / Optional Dedicated IP</li>
+                <li>100Mbps (Burstable 1Gbps)</li>
+                <li>Windows & Linux OS supported</li>
+            </ul>
+            <button class="btn" onclick="window.location.href='https://cp.simplevps.xyz/cart.php';">Get Started</button>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p class="contact">📧 Email: <a href="/cdn-cgi/l/email-protection#71020401011e03053102181c011d140701025f">[email protected]</a></p>
+    <p class="contact">💬 WhatsApp: <a href="https://wa.me/601135827728" target="_blank">+6011-35827728</a></p>
+
+    <h3 style="margin-top:20px;font-size:16px;color:#1c1c1e;">Accepted Payment Methods</h3>
+    <div class="payment-icons" style="margin:10px 0;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/FPX_Logo.svg" alt="FPX">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/DuitNow-logo.png" alt="DuitNow">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Stripe_logo%2C_revised_2016.png" alt="Stripe">
+        <img src="https://cdn.toyyibpay.com/assets/img/logo.svg" alt="ToyyibPay">
+    </div>
+
+    <!-- Added operator information -->
+    <p style="margin-top:15px; color:#1c1c1e;">
+        SimpleVPS is operated by <strong>Harmaz Systems</strong> – 
+        <a href="https://harmaz.com" target="_blank">Harmaz.com</a>
+    </p>
+
+    <p>&copy; 2025 SimpleVPS. All rights reserved.</p>
+    <p>Follow us: 🐦 <a href="#">Twitter</a> | 📘 <a href="#">Facebook</a></p>
+</footer>
+
+</body>
+</html>
