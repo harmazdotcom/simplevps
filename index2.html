@@ -13,53 +13,72 @@
         color:#1c1c1e;
     }
 
+    /* PREMIUM HEADER */
     header {
-        background:#007aff;
-        padding:15px 0 10px;
+        background: linear-gradient(90deg, #007aff, #005fcc);
+        padding:18px 0 16px;
         text-align:center;
         color:#fff;
-        font-size:22px;
-        font-weight:600;
+        font-size:24px;
+        font-weight:700;
+        letter-spacing:0.4px;
+        text-shadow:0 1px 3px rgba(0,0,0,0.25);
     }
 
     .full-site-link {
         text-align:center;
-        background:#e8f0ff;
-        padding:10px 0;
-        font-size:15px;
+        background:#e9f2ff;
+        padding:12px 0;
+        font-size:16px;
+        font-weight:500;
     }
 
     .full-site-link a {
         color:#007aff;
         text-decoration:none;
-        font-weight:500;
     }
 
+    /* Container */
     .container {
         padding:20px;
-        max-width:600px;
+        max-width:650px;
         margin:auto;
     }
 
+    /* VPS PLAN CARD */
     .plan {
         background:#fff;
-        border-radius:14px;
-        padding:20px;
-        margin-bottom:18px;
-        box-shadow:0 3px 8px rgba(0,0,0,0.08);
+        border-radius:16px;
+        padding:22px;
+        margin-bottom:20px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.08);
+        transition:transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .plan:hover {
+        transform:translateY(-3px);
+        box-shadow:0 8px 20px rgba(0,0,0,0.12);
     }
 
     .plan h3 {
         margin:0;
-        font-size:20px;
+        font-size:21px;
         color:#007aff;
         margin-bottom:10px;
-        font-weight:600;
+        font-weight:700;
+        display:flex;
+        align-items:center;
+        gap:6px;
+    }
+
+    .plan h3::before {
+        content:"💻";
+        font-size:20px;
     }
 
     .specs {
         font-size:16px;
-        line-height:1.6;
+        line-height:1.7;
         margin-bottom:15px;
         color:#333;
     }
@@ -79,26 +98,28 @@
         background:#007aff;
         color:white;
         font-size:17px;
-        border-radius:10px;
+        border-radius:12px;
         cursor:pointer;
         text-align:center;
         font-weight:600;
-        transition:0.2s ease;
+        transition:0.15s ease;
     }
 
     .btn:hover {
         background:#005fcc;
         transform:translateY(-2px);
+        box-shadow:0 3px 8px rgba(0,0,0,0.15);
     }
 
     footer {
-        padding:20px;
+        padding:25px 20px;
         text-align:center;
         font-size:14px;
         color:#888;
-        margin-top:20px;
+        margin-top:25px;
     }
 
+    /* DESKTOP VIEW IMPROVED */
     @media(min-width:600px){
         .container {
             max-width:900px;
@@ -130,7 +151,7 @@
 
 <body>
 
-<header>SimpleVPS – Mobile Friendly</header>
+<header>🚀 SimpleVPS – Mobile Friendly</header>
 
 <div class="full-site-link">
     <a href="index.html">🔗 View Full Website</a>
